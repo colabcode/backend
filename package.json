@@ -7,7 +7,11 @@
   "author": "@vzhufk @stepanvanzuriak",
   "license": "MIT",
   "private": false,
+  "engines": {
+    "node": "11"
+  },
   "scripts": {
+    "start": "node --experimental-modules index.mjs",
     "start:dev": "nodemon --inspect --experimental-modules index.mjs",
     "postinstall": "link-module-alias",
     "preinstall": "command -v link-module-alias && link-module-alias clean || true"
