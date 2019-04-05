@@ -16,5 +16,8 @@ export default {
   env: {
     dev: !env || ["development"].includes(env),
     prod: env && ["production"].includes(env)
+  },
+  log: {
+    level: process.env.LOG_LEVEL || "debug"
   }
 };

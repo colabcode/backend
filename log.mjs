@@ -1,3 +1,4 @@
+import config from "@config";
 import winston from "winston";
 
 const out = winston.format.printf(info => {
@@ -5,6 +6,7 @@ const out = winston.format.printf(info => {
 });
 
 const log = winston.createLogger({
+  level: config.env.level,
   format: winston.format.combine(
     winston.format.timestamp(),
     winston.format.colorize(),
