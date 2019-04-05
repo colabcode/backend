@@ -12,5 +12,9 @@ export default {
   },
   db: {
     url: process.env.DATABASE_URL
+  },
+  env: {
+    dev: !env || ["development"].includes(env),
+    prod: env && ["production"].includes(env)
   }
 };
