@@ -25,6 +25,7 @@
   },
   "_moduleAliases": {
     "@config": "config/index.mjs",
+    "@helpers": "src/helpers",
     "@log": "log.mjs"
   }
 }
