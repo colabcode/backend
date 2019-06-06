@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "start:dev": "nodemon --exec ts-node index.ts"
+    "start:dev": "nodemon --exec ts-node -p index.ts"
   },
   "dependencies": {
     "dotenv": "^7.0.0",

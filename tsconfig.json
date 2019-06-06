@@ -9,8 +9,12 @@
     "outDir": "dist",
     "baseUrl": ".",
     "paths": {
-      "*": ["node_modules/*", "src/types/*"]
+      "github-auth": ["src/types/github-auth"],
+      "services/*": ["src/services/*"]
     },
+    "typeRoots": ["./src/types", "./node_modules/@types"],
     "types": ["node"]
-  }
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules", "src/types"]
 }
