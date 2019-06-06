@@ -1,10 +1,10 @@
-import config from "@config";
+import config from "../config";
 import graphql from "express-graphql";
 import schema from "./features";
 
-const graphiql = !config.env.production;
+const graphiql = !config.env.prod;
 
-export default app => {
+export default (app: any) => {
   app.use(
     "/graphql",
     graphql({

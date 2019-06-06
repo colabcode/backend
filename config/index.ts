@@ -19,5 +19,9 @@ export default {
   },
   log: {
     level: process.env.LOG_LEVEL || "debug"
+  },
+  github: {
+    appId: process.env.GITHUB_APP_ID,
+    appSecret: process.env.GITHUB_APP_SECRET
   }
 };

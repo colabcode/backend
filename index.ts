@@ -1,7 +1,8 @@
 import express from "express";
 import graphql from "./src/graphql";
-import log from "@log";
+import log from "./log";
 import www from "./www";
+import routing from "./src/routing";
 
 const app = express();
 
@@ -10,6 +11,9 @@ www(app);
 
 log.info("[1] Attaching GraphQL.");
 graphql(app);
+
+log.info("[2] Attaching Routing.");
+routing(app);
 
 log.info("[*] App is ready.");
 
