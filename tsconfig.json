@@ -13,7 +13,7 @@
       "services/*": ["src/services/*"]
     },
     "typeRoots": ["./src/types", "./node_modules/@types"],
-    "types": ["node"]
+    "types": ["node", "jest"]
   },
   "include": ["./src/**/*"],
   "exclude": ["node_modules", "src/types"]
