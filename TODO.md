@@ -2,16 +2,16 @@
 
 ## Major features:rage4::
 
-- [] Setup Jest and Test
-- [] Setup socket.io
-- [] Use Objection.js with knex.js
+- [ ] Setup Jest and Test
+- [ ] Setup socket.io
+- [ ] Use Objection.js with knex.js
 
 ## Minor features:hurtrealbad::
 
-- [] Add type for express server (instead of _any_)
+- [ ] Add type for express server (instead of _any_)
 - [x] Add TODO.
 
 ## Dev features:suspect::
 
-- [] Setup Docker
-- [] Publish on Heroku(maybe)
+- [ ] Setup Docker
+- [ ] Publish on Heroku(maybe)
