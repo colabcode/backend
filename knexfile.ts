@@ -6,7 +6,9 @@ if (!env || ["development"].includes(env)) {
   dotenv.config();
 }
 
-module.exports = {
+const db = {
   client: "pg",
   connection: process.env.DATABASE_URL
 };
+
+export = db;
