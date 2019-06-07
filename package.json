@@ -12,6 +12,7 @@
   },
   "scripts": {
     "build": "tsc",
+    "start": "node dist/index.js",
     "start:dev": "nodemon --exec ts-node -p index.ts"
   },
   "dependencies": {
