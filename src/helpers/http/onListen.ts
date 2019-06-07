@@ -1,4 +1,4 @@
-import log from "../../../log";
+import log from "../../log";
 
 export default (server: any) => () => {
   var addr = server.address();

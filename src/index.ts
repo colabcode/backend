@@ -1,8 +1,8 @@
 import express from "express";
-import graphql from "./src/graphql";
+import graphql from "./graphql";
 import log from "./log";
 import www from "./www";
-import routing from "./src/routing";
+import routing from "./routing";
 
 const app = express();
 

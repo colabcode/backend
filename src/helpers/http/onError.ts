@@ -1,5 +1,5 @@
 import config from "../../../config";
-import log from "../../../log";
+import log from "../../log";
 
 export default (server: any) => (error: NodeJS.ErrnoException) => {
   const port: number = config.app.port;

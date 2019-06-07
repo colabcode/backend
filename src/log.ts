@@ -1,4 +1,4 @@
-import config from "./config";
+import config from "../config";
 import winston from "winston";
 
 const out = winston.format.printf(info => {

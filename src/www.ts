@@ -1,6 +1,6 @@
-import config from "./config";
+import config from "../config";
 import http from "http";
-import httpEvents from "./src/helpers/http";
+import httpEvents from "./helpers/http";
 
 export default (app: Express.Application) => {
   const server = http.createServer(app);
