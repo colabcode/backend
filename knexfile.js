@@ -8,5 +8,5 @@ if (!env || ["development"].includes(env)) {
 
 module.exports = {
   client: "pg",
-  DATABASE_URL: process.env.DATABASE_URL
+  connection: process.env.DATABASE_URL
 };
