@@ -15,3 +15,4 @@
 
 - [ ] Setup Docker
 - [ ] Publish on Heroku(maybe)
+- [ ] Add Travis CI
