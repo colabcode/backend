@@ -13,16 +13,4 @@ export default class SnippetModel extends Model {
   static get idColumn() {
     return "id";
   }
-
-  static get type() {
-    return type;
-  }
-
-  static one(id: string) {
-    return super.query().findById(id);
-  }
-
-  static all() {
-    return super.query();
-  }
 }
