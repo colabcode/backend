@@ -5,7 +5,7 @@ import database from "../../database";
 
 Model.knex(database);
 
-export default class Snippet extends Model {
+export default class SnippetModel extends Model {
   static get tableName() {
     return "snippets";
   }
@@ -18,7 +18,11 @@ export default class Snippet extends Model {
     return type;
   }
 
-  static get resolve() {
-    return resolve;
+  static one(id: string) {
+    return super.query().findById(id);
+  }
+
+  static all() {
+    return super.query();
   }
 }

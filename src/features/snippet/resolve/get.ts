@@ -1,11 +1,11 @@
-import Snippet from "../model";
+import SnippetModel from "../model";
 
 const one = (model: any, args: any, context: any) => {
   const id = args.id;
 
-  return Snippet.query().findById(id);
+  return SnippetModel.query().findById(id);
 };
 
-const all = (model: any, args: any, context: any) => Snippet.query();
+const all = (model: any, args: any, context: any) => SnippetModel.query();
 
 export default { one, all };

@@ -1,5 +1,5 @@
 import { GraphQLString, GraphQLList } from "graphql";
-import Snippet from "./model";
+import Snippet from "./entity";
 
 export default {
   snippet: {
