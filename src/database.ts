@@ -4,6 +4,4 @@ import Knex from "knex";
 
 const knex = Knex(knexfile);
 
-objection.Model.knex(knex);
-
 export default knex;
