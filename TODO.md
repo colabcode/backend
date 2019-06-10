@@ -2,9 +2,9 @@
 
 ## Major features:rage4::
 
-- [ ] Setup Jest and Test
+- [x] Setup Jest and Test
 - [ ] Setup socket.io
-- [ ] Use Objection.js with knex.js
+- [x] Use Objection.js with knex.js
 
 ## Minor features:hurtrealbad::
 
@@ -13,6 +13,6 @@
 
 ## Dev features:suspect::
 
-- [ ] Setup Docker
+- [x] Setup Docker
 - [ ] Publish on Heroku(maybe)
 - [ ] Add Travis CI

@@ -14,7 +14,12 @@
     "build": "tsc --build",
     "start": "node dist/src/index.js",
     "start:dev": "nodemon --exec ts-node -p src/index.ts",
-    "test": "jest"
+    "migrate:latest": "knex migrate:latest --knexfile knexfile.ts ",
+    "migrate:make": "knex migrate:make --knexfile knexfile.ts ",
+    "migrate:rollback": "knex migrate:rollback --knexfile knexfile.ts ",
+    "seed:make": "knex seed:make --knexfile knexfile.ts ",
+    "seed:run": "knex seed:run --knexfile knexfile.ts ",
+    "test": "jest --coverage"
   },
   "dependencies": {
     "dotenv": "^7.0.0",
