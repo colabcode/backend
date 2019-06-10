@@ -13,8 +13,5 @@ export default (server: any) => (error: NodeJS.ErrnoException) => {
     log.error(`${bind} is already in use.`);
   }
 
-  // eslint-disable-next-line
-  process.exit(1);
-
   throw error;
 };
