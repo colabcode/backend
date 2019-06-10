@@ -1,14 +1,8 @@
-const dotenv = require("dotenv");
-
-const env = process.env.NODE_ENV;
-
-if (!env || ["development"].includes(env)) {
-  dotenv.config();
-}
+import config from "./config";
 
 const db = {
   client: "pg",
-  connection: process.env.DATABASE_URL
+  connection: config.db.url
 };
 
 export = db;
